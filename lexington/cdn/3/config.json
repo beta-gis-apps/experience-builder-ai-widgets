@@ -2171,14 +2171,15 @@
     "layout_148": {
       "type": "FIXED",
       "order": [
+        "9",
         "6",
+        "8",
         "1",
         "0",
         "2",
         "3",
         "4",
         "5",
-        "8",
         "7"
       ],
       "content": {
@@ -2237,6 +2238,12 @@
           "widgetId": "widget_244",
           "bbox": {},
           "setting": {}
+        },
+        "9": {
+          "type": "WIDGET",
+          "widgetId": "widget_272",
+          "bbox": {},
+          "setting": {}
         }
       },
       "label": "Controller layout"
@@ -2249,6 +2256,7 @@
     "layout_150": {
       "type": "FIXED",
       "order": [
+        "2",
         "0"
       ],
       "content": {
@@ -2258,10 +2266,10 @@
           "bbox": {
             "left": "0.0%",
             "right": "79.6%",
-            "top": "32.8%",
-            "bottom": "0.1%",
+            "top": "46.5%",
+            "bottom": "-0.0%",
             "width": "20.4%",
-            "height": "67.1%"
+            "height": "53.5%"
           },
           "setting": {
             "autoProps": {
@@ -2272,6 +2280,26 @@
             },
             "vCenter": false,
             "hCenter": false
+          }
+        },
+        "2": {
+          "type": "WIDGET",
+          "widgetId": "widget_148",
+          "bbox": {
+            "left": "2.5%",
+            "right": "74.9%",
+            "top": "1.9%",
+            "bottom": "93.2%",
+            "width": "22.6%",
+            "height": "4.9%"
+          },
+          "setting": {
+            "autoProps": {
+              "left": false,
+              "right": true,
+              "top": false,
+              "bottom": true
+            }
           }
         }
       },
@@ -3631,26 +3659,6 @@
             "hCenter": false
           }
         },
-        "1": {
-          "type": "WIDGET",
-          "widgetId": "widget_148",
-          "bbox": {
-            "left": "2.9%",
-            "right": "74.5%",
-            "top": "2.4%",
-            "bottom": "92.7%",
-            "width": "22.6%",
-            "height": "4.9%"
-          },
-          "setting": {
-            "autoProps": {
-              "left": false,
-              "right": true,
-              "top": false,
-              "bottom": true
-            }
-          }
-        },
         "2": {
           "type": "WIDGET",
           "widgetId": "widget_147",
@@ -3674,8 +3682,7 @@
       },
       "order": [
         "2",
-        "0",
-        "1"
+        "0"
       ]
     },
     "layout_189": {
@@ -6958,7 +6965,9 @@
             "avatar": {
               "type": "primary",
               "size": "default",
-              "shape": "rectangle"
+              "shape": "rectangle",
+              "buttonSize": null,
+              "iconSize": null
             },
             "variant": {
               "default": {
@@ -6991,7 +7000,7 @@
     "widget_144": {
       "uri": "widgets/arcgis/legend/",
       "version": "1.21.0",
-      "label": "Legend 3",
+      "label": "Legend",
       "config": {},
       "id": "widget_144",
       "useMapWidgetIds": [
@@ -7001,7 +7010,7 @@
     "widget_145": {
       "uri": "widgets/arcgis/map-layers/",
       "version": "1.21.0",
-      "label": "Map Layers 3",
+      "label": "Map Layers",
       "config": {
         "useMapWidget": true,
         "customizeLayerOptions": {}
@@ -7014,7 +7023,7 @@
     "widget_146": {
       "uri": "widgets/arcgis/basemap-gallery/",
       "version": "1.21.0",
-      "label": "Basemap Gallery 3",
+      "label": "Basemap Gallery",
       "config": {},
       "id": "widget_146",
       "useMapWidgetIds": [
@@ -15912,7 +15921,7 @@
           "color": ""
         }
       },
-      "label": "CIP Report",
+      "label": "Generate CIP Report",
       "config": {
         "embedType": "url",
         "expression": "<p>https://we56ritp3dxdnefvjte6yi4z5q0hhqht.lambda-url.us-east-2.on.aws/?town_name=Town%20of%20Lexington&amp;state_abbrev=MA&amp;report_type=t10_cip&amp;button_label=Download Capital Improvement Plan Report</p>",
@@ -18305,6 +18314,100 @@
       "label": "CIP AI Scenario Engine 2",
       "config": null,
       "id": "widget_268"
+    },
+    "widget_272": {
+      "uri": "widgets/arcgis/analysis/",
+      "version": "1.21.0",
+      "icon": {
+        "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 20 20\"><path fill=\"#000\" fill-rule=\"evenodd\" d=\"M14.5 15.5a4.5 4.5 0 1 0-9 0 4.5 4.5 0 0 0 9 0m-8.1 0a3.6 3.6 0 1 1 7.2 0 3.6 3.6 0 0 1-7.2 0\" clip-rule=\"evenodd\"></path><path fill=\"#000\" d=\"M12.475 2.23a.42.42 0 0 1 0 .638.54.54 0 0 1-.707 0L10.5 1.725V9.5a.5.5 0 0 1-1 0V1.725L8.232 2.868a.54.54 0 0 1-.707 0 .42.42 0 0 1 0-.637L10 0zM16 4.5a.5.5 0 0 0 .5.5h1.82l-4.891 5.527a.5.5 0 1 0 .749.663L19 5.74V7.5a.5.5 0 0 0 1 0V4h-3.5a.5.5 0 0 0-.5.5M4 4.5a.5.5 0 0 1-.5.5H1.682l4.935 5.48a.5.5 0 1 1-.743.67L1 5.736V7.5a.5.5 0 0 1-1 0V4h3.5a.5.5 0 0 1 .5.5\"></path></svg>",
+        "properties": {
+          "filename": "WidgetShareOutlined",
+          "originalName": "outlined/brand/widget-share.svg",
+          "path": [
+            "brand",
+            "WidgetShareOutlined"
+          ],
+          "inlineSvg": true,
+          "isUploaded": false,
+          "color": ""
+        }
+      },
+      "label": "Scenario Generator",
+      "config": {
+        "toolList": [
+          {
+            "id": "54504270-e1f1-11f1-9d08-eff5bbff54df",
+            "type": "custom",
+            "toolName": "Planner_Scenario_test",
+            "analysisEngine": "standard",
+            "config": {
+              "toolInfo": {
+                "webToolItemId": "67724891846f4ed18e763b49d77361fe",
+                "name": "Planner_Scenario_test",
+                "displayName": "Planner_Scenario_test",
+                "description": "<p>Tool for generating multiple CIP scenarios.</p><p>To <strong>save </strong>a scenario: when finished editing, ensure “<i>Save Current Scenario</i>” is selected in the tool, provide a customized name* in the Scenario box, and click <i>Run</i>. This will lock in the information for this current session and can be recalled later.</p><p>*Note - keep this scenario name saved as it will be needed to load it later.</p><p>To <strong>load</strong> a scenario: ensure “<i>Load Saved Scenario</i>” is selected, provide the name of your custom scenario in the Scenario box, and click <i>Run</i>. This will restore previously saved information for that scenario.</p><p>If the map/charts do not update immediately after the tool has run, click the “<strong>Reset</strong>” button within the AI widget to refresh the session.</p>",
+                "category": "",
+                "executionType": "esriExecutionTypeAsynchronous",
+                "helpUrl": "https://www.arcgis.com/home/item.html?id=67724891846f4ed18e763b49d77361fe",
+                "tags": [
+                  "Geoprocessing Service"
+                ],
+                "parameters": [
+                  {
+                    "name": "action",
+                    "displayName": "Save/Load Scenario",
+                    "parameterType": "esriGPParameterTypeRequired",
+                    "defaultValue": "Save Current Scenario",
+                    "dataType": "GPString",
+                    "category": "",
+                    "direction": "esriGPParameterDirectionInput",
+                    "choiceList": [
+                      "Save Current Scenario",
+                      "Load Saved Scenario"
+                    ]
+                  },
+                  {
+                    "name": "scenario_slot",
+                    "displayName": "Scenario",
+                    "description": "",
+                    "parameterType": "esriGPParameterTypeRequired",
+                    "defaultValue": "Scenario 1",
+                    "dataType": "GPString",
+                    "category": "",
+                    "direction": "esriGPParameterDirectionInput"
+                  }
+                ]
+              },
+              "utility": {
+                "utilityId": "utility_7",
+                "task": "Planner_Scenario_test"
+              },
+              "toolUrl": "https://notebookswebtools8.arcgis.com/arcgis/rest/services/67724891846f4ed18e763b49d77361fe/GPServer/Planner_Scenario_test",
+              "output": {
+                "ignored": {},
+                "allowExport": {},
+                "decimalPlace": {},
+                "dateFormat": {},
+                "timeFormat": {},
+                "addResultLayersToMapAuto": {}
+              },
+              "option": {
+                "showHelpLink": true,
+                "link": "https://www.arcgis.com/home/item.html?id=67724891846f4ed18e763b49d77361fe",
+                "toolDisplayName": "Scenario Generator"
+              }
+            }
+          }
+        ]
+      },
+      "id": "widget_272",
+      "useUtilities": [
+        {
+          "utilityId": "utility_7",
+          "task": "Planner_Scenario_test"
+        }
+      ],
+      "enableDataAction": false
     }
   },
   "exbVersion": "1.21.0",
@@ -19610,18 +19713,18 @@
       }
     }
   },
-  "publishTimestamp": 1794581574581,
+  "publishTimestamp": 1794856233915,
   "attributes": {
     "portalUrl": "https://BETA-Inc.maps.arcgis.com",
     "isWebTier": false,
-    "clientId": "MA01BpplMwTJlb23",
+    "clientId": "",
     "express": false,
-    "title": "Lexington, MA Roadway Applications 1 1 1 1",
+    "title": "Lexington, MA Roadway Applications",
     "description": "",
     "type": "Web Experience",
     "thumbnail": null
   },
-  "timestamp": 1794581512015,
+  "timestamp": 1794856232756,
   "sharedThemeVariables": {
     "header": {
       "bg": "#17365d",
@@ -20147,24 +20250,6 @@
               "CIP_Treatment_Year"
             ]
           },
-          "sum_of_CIP_TotalCost_of_Minor Rehabilitation": {
-            "jimuName": "sum_of_CIP_TotalCost_of_Minor Rehabilitation",
-            "name": "sum_of_CIP_TotalCost_of_Minor Rehabilitation",
-            "type": "NUMBER",
-            "esriType": "esriFieldTypeDouble",
-            "alias": "Sum of CIP Total Cost of Minor Rehabilitation",
-            "fieldFormat": {
-              "type": "number",
-              "maximumFractionDigits": 2,
-              "minimumFractionDigits": 2,
-              "style": "decimal",
-              "useGrouping": "always"
-            },
-            "originFields": [
-              "CIP_TotalCost",
-              "CIP_Treatment_Band"
-            ]
-          },
           "sum_of_CIP_TotalCost_of_Preventative Maintenance": {
             "jimuName": "sum_of_CIP_TotalCost_of_Preventative Maintenance",
             "name": "sum_of_CIP_TotalCost_of_Preventative Maintenance",
@@ -20243,23 +20328,6 @@
             "alias": "CIP Treatment Year",
             "originFields": [
               "CIP_Treatment_Year"
-            ]
-          },
-          "sum_of_CIP_LMY_Added_of_Minor Rehabilitation": {
-            "jimuName": "sum_of_CIP_LMY_Added_of_Minor Rehabilitation",
-            "name": "sum_of_CIP_LMY_Added_of_Minor Rehabilitation",
-            "type": "NUMBER",
-            "esriType": "esriFieldTypeDouble",
-            "alias": "Sum of CIP LMY Added of Minor Rehabilitation",
-            "fieldFormat": {
-              "type": "number",
-              "minimumFractionDigits": 0,
-              "maximumFractionDigits": 2,
-              "useGrouping": "auto"
-            },
-            "originFields": [
-              "CIP_LMY_Added",
-              "CIP_Treatment_Band"
             ]
           },
           "sum_of_CIP_LMY_Added_of_Preventative Maintenance": {
@@ -20369,7 +20437,7 @@
     },
     "utility_5": {
       "id": "utility_5",
-      "sourceLabel": "Update Current Unit Costs",
+      "sourceLabel": "Lexington, MA - Update Current Unit Costs",
       "type": "GPSERVER",
       "source": "custom",
       "itemId": "f50a274a9e0442fe856cca88abfcb476",
@@ -20378,6 +20446,20 @@
       "tasks": [
         {
           "name": "Update_Current_Unit_Costs"
+        }
+      ]
+    },
+    "utility_7": {
+      "id": "utility_7",
+      "sourceLabel": "Lexington, MA - Planner Scenario Generation",
+      "type": "GPSERVER",
+      "source": "custom",
+      "itemId": "67724891846f4ed18e763b49d77361fe",
+      "portalUrl": "https://BETA-Inc.maps.arcgis.com",
+      "url": "https://notebookswebtools8.arcgis.com/arcgis/rest/services/67724891846f4ed18e763b49d77361fe/GPServer",
+      "tasks": [
+        {
+          "name": "Planner_Scenario_test"
         }
       ]
     }
